@@ -278,8 +278,7 @@ are generated in two spatial dimensions. However, the two techniques
 offer the capability of 3D imaging using tomography. A tomographic
 reconstruction is achieved by taking a series of two-dimensional
 projection images while the sample is rotated over \ang{180}, followed
-by conversion of these images to a three-dimensional volume. This
-process is also known as an inverse Radon transform. This technique is
+by conversion of these images to a three-dimensional volume. This technique is
 agnostic regarding the contrast mechanism by which the two-dimensional
 projections were created, meaning it can be combined with any X-ray
 microscopy contrast mechanism discussed here. Provided the methodology
@@ -287,30 +286,7 @@ involves the measurement of transmitted photons, tomography allows for
 the effects of sample thickness to be removed so that the intensity of
 each voxel is dependent only on material composition. Since the sample
 is rotating, precise alignment of the rotation axis is necessary to
-keep the sample in view. There are many algorithms available for
-performing the reconstruction: each seeks a balance between speed and
-accuracy. They generally fall into two categories: analytical and
-iterative. Analytical techniques are usually a variant of
-back-projection and vary by the exact nature of the filters applied to
-the input data. They have the advantage of being very fast, but often
-introduce artifacts. Iterative techniques introduce fewer artifacts
-that also tend to be uncorrelated, but reconstruction often requires
-many iterations to achieve reliable results, which makes this approach
-considerably slower than the analytical algorithms. New methods are
-being developed that combine the advantages of both techniques. For
-example, if many samples with similar properties are to be analyzed, a
-set of optimized filters for back-projection can be derived via
-machine learning. The initial training is quite slow but once
-complete, the filters can be used with any new dataset provided that
-the sample responds similarly to the training
-data\cite{pelt2013}. However, this requirement is stricter than it
-seems at first sight: many of the desired insights about an
-electrochemical reaction depend on the precise measurement of changes
-in the interactions between material and X-rays during the
-experiment. A major advantage of this approach, though, is that the
-training can be performed in such a way that it expects low quality
-datasets, such as those with few projections, so subsequent
-experiments have increased temporal resolution.
+keep the sample in view.
 
 \subsection{X-ray Optics}
 
@@ -355,60 +331,11 @@ below.
 
 \subsection{Detectors}
 
-In general, X-ray detectors fall into two categories: integrating and
-counting. Integrating detectors store up the total number of photons
-and are periodically read and cleared by the electronics. In contrast,
-counting detectors register and report each individual photon captured
-as a separate event. Detectors of the same operating mode share common
-properties, even if the underlying mechanisms may vary
-significantly. Integrating detectors usually have a limit on how many
-photons they can capture before being read, which effectively limits
-the dynamic range. Counting detectors do not have this
-limitation. However, there is a certain dead-time involved in
-converting the photon into a digital signal and any other photons
-arriving during this time will not be detected. It is worth noting
-that the first detectors were actually two-dimensional analog film,
-though they have been superseded by digital detectors, either
-charge-coupled device (CCD), multi-wire proportional counters (MWP),
-or arrays of point-detectors. CCDs are integrating detectors and, as
-such, respond well to high flux/count rates since there is no
-dead-time associated with each photon event. A proportional counter
-detects each photon as a separate event so there is theoretically no
-limit to its dynamic range other than the bit-depth of the downstream
-electronics. In an MWP detector, each photon induces an avalanche of
-ionization near the detector anode, which is then neutralized when the
-charge drifts back towards the cathode. This reset time limits the
-local flux that can be measured accurately. Combined with the time
-needed for readout of each event, this limits the global flux that can
-be measured accurately. Proportional counters are more common on
-laboratory instruments, whereas CCDs dominate in synchrotron
-experiments.
-
-In full-field microscopy, the magnified X-ray image strikes a
-scintillator where it is converted to visible light. The total energy
-of this conversion must be conserved, so one high-energy X-ray photon
-results in hundreds of low-energy visible light photons. This light is
-then magnified using visible-light microscopy optics onto a detector,
-usually a CCD. Any defects in the scintillator are clearly visible in
-the resulting intensity images so it is important to collect a
-reference frame to remove these features. For scanning microscopy, no
-post-sample optics are required. Instead, a detector measures the
-transmitted intensity at each raster position. Photomultiplier tubes
-(PMTs) have a large collection area, low noise and high gain, making
-them ideal for this application. In some specific scanning microscopy
-methods, a two-dimensional interference pattern is needed at each
-raster position, so a CCD detector is used instead.
-
-Detectors specific for the detection of diffracted X-rays can also be
+Detectors specific for the detection of diffracted X-rays can be
 described by their geometry. Point-detectors can capture photons at
 only one position at a time and are then scanned across a range of
 scattering angles to acquire a one-dimensional diffraction
-pattern. They are commonly used in laboratory diffractometers and when
-the sample can be assumed to behave as an ideal powder. A major
-advantage is that a variety of absorbers and slits can be positioned
-to reduce fluorescence and air scattering. Line-detectors can capture
-a range of angles simultaneously. They produce the same
-one-dimensional pattern, only faster. A disadvantage of both of these
+pattern. Line-detectors can capture a range of angles simultaneously. They produce the same one-dimensional pattern, only faster. A disadvantage of both of these
 geometries is that they only retrieve a slice through the full
 Debye-Scherrer rings. If only a small number of crystallites are
 present, it is unlikely that any diffraction conditions will land on
@@ -421,6 +348,20 @@ of radiation used: high energy X-rays cause more diffraction
 conditions to be detectable in a given area. A 1-dimensional
 diffraction pattern can then be obtained by integrating across the
 Debye-Scherrer rings.
+
+In full-field microscopy, the magnified X-ray image strikes a
+scintillator where it is converted to visible light. The total energy
+of this conversion must be conserved, so one high-energy X-ray photon
+results in hundreds of low-energy visible light photons. This light is
+then magnified using visible-light microscopy optics onto a detector,
+usually a charged coupled device (CCD). Any defects in the scintillator are clearly visible in the resulting intensity images so it is important to collect a
+reference frame to remove these features. For scanning microscopy, no
+post-sample optics are required. Instead, a detector measures the
+transmitted intensity at each raster position. Photomultiplier tubes
+(PMTs) have a large collection area, low noise and high gain, making
+them ideal for this application. In some specific scanning microscopy
+methods, a two-dimensional interference pattern is needed at each
+raster position, so a CCD detector is used instead.
 
 The dynamic range of the detector is an important factor to
 consider. CCDs work by exposing a photo-active layer to radiation,
