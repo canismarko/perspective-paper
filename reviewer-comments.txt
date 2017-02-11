@@ -1,0 +1,230 @@
+
+Dear Dr. Cabana:
+
+Thank you for submitting your manuscript for publication in Chemistry of
+Materials. It has been examined by expert reviewers who have concluded that
+the work is of potential interest to the readership of Chemistry of
+Materials; however, it appears that a major revision, possibly followed by
+further reviewer evaluation, will be needed prior to its further
+consideration for publication. Please see the following reviewers=E2=80=99 =
+reports
+for details regarding the requested changes and/or additions.
+
+Please submit your revision on your ACS ParagonPlus homepage by
+14-Mar-2017. When submitting your revised manuscript through ACS Paragon
+Plus, you will be able to respond to the reviewer's comments in the text
+box provided or by attaching a file containing your detailed responses.
+
+To Revise Your Manuscript on the Web:
+
+To revise your manuscript, log into ACS ParagonPlus at
+http://paragonplus.acs.org/login and select "My Authoring Activity". There
+you will find your manuscript title listed under "Revisions Requested by
+Editorial Office." Your original files are available to you when you upload
+your revised manuscript. If you are replacing files, please remove the old
+version of the file from the manuscript before uploading the new file.
+
+Table of Contents Graphic:  IMPORTANT: Only a TOC graphic is NOW required
+(A TOC summary will no longer be needed). Place the graphic at the end of
+the manuscript as the last page.  It should capture the reader=E2=80=99s at=
+tention
+and, in conjunction with the manuscript title, gives the reader a quick
+visual impression of the essence of the paper without providing specific
+results. It is also used for multiple purposes, including the document
+abstract and other situations where a representative graphic is required.
+It should be in the form of a structure, graph, drawing, SEM/TEM
+photograph, or reaction scheme. Some of the best images are simple,
+relatively free of text and technical characters, and make use of color for
+visual impact. It is best to stay away from complex structure schemes and
+small-sized details. Please submit a graphic in the actual size to be used
+for the TOC that will fit in an area 1.4 in. high and 3.3 in. wide (3.6 cm
+=C3=97 8.4 cm). Larger images will be reduced to fit within those dimension=
+s.
+Type size of labels, formulas, or numbers within the graphic must be
+legible. Tables or spectra are not acceptable.   Please visit the
+Guidelines for Table of Contents/Abstract Graphics for more information and
+examples http://pubs.acs.org/userimages/ContentEditor/
+1218639294411/cmatex_tocguide.pdf
+
+Just Accepted Manuscripts (JAMs): Please note that if you have selected
+"Yes" for the Just Accepted Manuscript option during the submission and/or
+revision process, the accepted version of your manuscript will be posted as
+a JAM on the ACS Web site as is, without any revisions or corrections by
+the editorial office. The format, appearance, and content are the sole
+responsibility of the author(s).  A Just Accepted manuscript cannot be
+revised once it is posted to the Web. However, errors may be corrected by
+the author while reviewing the Manuscript Galley Proofs before the article
+appears on the Web as an ASAP Article or as part of a journal issue.
+
+On resubmission, please provide 2 copies of the final manuscript file:
+
+a) The final revised manuscript file that does not contain any highlighting
+or editing marks. This file should be uploaded as the primary manuscript
+document file.
+
+b) A marked copy of the revised manuscript that shows changes made on
+revision clearly highlighted. This file should be uploaded as Supporting
+Information for Review.
+
+Supporting Information: If the manuscript is accompanied by any supporting
+information for publication, a brief description of the supplementary
+material is required in the manuscript. The appropriate format is:
+Supporting Information. Brief statement in nonsentence format listing the
+contents of the material supplied as Supporting Information.
+
+Funding Sources: Authors are required to report ALL funding sources and
+grant/award numbers relevant to this manuscript. Enter all sources of
+funding for ALL authors relevant to this manuscript in BOTH the Open Funder
+Registry tool in ACS Paragon Plus and in the manuscript to meet this
+requirement. See http://pubs.acs.org/page/4authors/funder_options.html for
+complete instructions.
+
+ORCID: Authors submitting manuscript revisions are required to provide
+their own validated ORCID iDs before completing the submission, if an ORCID
+iD is not already associated with their ACS Paragon Plus user profiles.
+This iD may be provided during original manuscript submission or when
+submitting the manuscript revision. You can provide only your own ORCID iD,
+a unique researcher identifier. If your ORCID iD is not already validated
+and associated with your ACS Paragon Plus user profile, you may do so by
+following the ORCID-related links in the Email/Name section of your ACS
+Paragon Plus account. All authors are encouraged to register for and
+associate their own ORCID iDs with their ACS Paragon Plus profiles. The
+ORCID iD will be displayed in the published article for any author on a
+manuscript who has a validated ORCID iD associated with ACS Paragon Plus
+when the manuscript is accepted. Learn more at http://www.orcid.org.
+
+References: All references should include the title of the work being cited
+(in title case format) and the full page range. See http://pubs.acs.org/
+paragonplus/submission/cmatex/cmatex_reference_guidelines.pdf
+
+ACS Publications uses CrossCheck's iThenticate software to detect instances
+of similarity in submitted manuscripts. In publishing only original
+research, ACS is committed to deterring plagiarism, including
+self-plagiarism. Your manuscript may be screened for similarity to
+published material.
+
+Thank you for considering Chemistry of Materials as a forum for the
+publication of your work.
+
+With sincere regards,
+
+M. Rosa Palac=C3=ADn
+Editor, Chemistry of Materials
+Institut de Ciencia de Materials de Barcelona
+Fax: 202 354 5290
+Email: palacin-office@cm.acs.org
+
+FOR ASSISTANCE WITH YOUR MANUSCRIPT SUBMISSION PLEASE CONTACT:
+
+ACS Publications Customer Services & Information (CSI)
+Email: support@services.acs.org
+Phone: 202-872-4357
+Toll Free Phone: 800-227-9919 (USA/Canada only)
+
+------------------------------------
+
+Reviewer(s)' Comments to Author:
+
+Reviewer: 1
+
+Recommendation: Publish after major revision.
+
+Comments:
+This paper summaries the recent progress in applying the state-of-the-art
+synchrotron X-ray imaging analytical methods to the study of material
+chemistry associated with batteries. This paper could be valuable for the
+research in battery community. However, the organization of the paper
+should be greatly improved:
+1.      The introduction of instrumentation occupies more than half length
+of the text, and should be greatly shortened.
+2.      The examples of applications should be better categorized. For
+example, they can be divided into anode and cathode (or full cell =E2=80=A6=
+), or
+categorized based on the nature of the probed problems according to the
+three parameters described by the authors.
+
+
+Additional Questions:
+Do you consider the subject matter of this manuscript suitable for
+publication in Chemistry of Materials?: Yes
+
+Do you feel that these findings represent a significant advance in the
+field of materials chemistry?: Yes
+
+Please rate the relevance to chemistry and material science (5 - High / 1 -
+Low): 5
+
+Please rate the overall quality and completeness (5 - High / 1 - Low): 3
+
+Please rate the originality and significance (5 - High / 1 - Low): 3
+
+Please rate the quality, clarity, and conciseness (5 - High / 1 - Low): 3
+
+Please rate the quality and appropriate use of figures, tables, etc. (5 -
+High / 1 - Low): 3
+
+Conclusions are adequately supported by the data:
+
+Satisfactory nomenclature is used:
+
+Hazards are adequately described:
+
+Appropriate referencing is provided:
+
+
+Reviewer: 2
+
+Recommendation: Publish after major revision.
+
+Comments:
+1)      This appears to be a review paper with only 65 references. Given
+the amount of recent work in this area, then the paper would be improved if
+more literature should be considered.
+2)      There is no mention of tomography applied to Zn based batteries
+such as Zn-Air and Zn-Ni.
+3)      There is little discussion of in-operando radiography. In
+particular there is no mention of the paper by Shearing et al on the direct
+radiography imaging of batteries undergoing extreme failure in Nature Comm.
+
+In summary, while the paper presents interesting data related to 3D
+tomography based imaging, it would be strengthened by a more complete
+discussion of the relevant literature
+
+Additional Questions:
+Do you consider the subject matter of this manuscript suitable for
+publication in Chemistry of Materials?: Yes
+
+Do you feel that these findings represent a significant advance in the
+field of materials chemistry?: Yes
+
+Please rate the relevance to chemistry and material science (5 - High / 1 -
+Low): 4
+
+Please rate the overall quality and completeness (5 - High / 1 - Low): 3
+
+Please rate the originality and significance (5 - High / 1 - Low): 3
+
+Please rate the quality, clarity, and conciseness (5 - High / 1 - Low): 3
+
+Please rate the quality and appropriate use of figures, tables, etc. (5 -
+High / 1 - Low): 4
+
+Conclusions are adequately supported by the data: Yes
+
+Satisfactory nomenclature is used: Yes
+
+Hazards are adequately described: N/A
+
+Appropriate referencing is provided: No
+
+
+------------
+PLEASE NOTE: This email message, including any attachments, contains
+confidential information related to peer review and is intended solely for
+the personal use of the recipient(s) named above. No part of this
+communication or any related attachments may be shared with or disclosed to
+any third party or organization without the explicit prior written consent
+of the journal Editor and ACS. If the reader of this message is not the
+intended recipient or is not responsible for delivering it to the intended
+recipient, you have received this communication in error. Please notify the
+sender immediately by e-mail, and delete the original message. Thank you.
