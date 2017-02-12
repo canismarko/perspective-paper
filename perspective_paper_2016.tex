@@ -5,6 +5,11 @@
 \usepackage{siunitx}           % Numbers with units, eg. 1.6 mm
 \usepackage{textcomp}          % Special symbols for text mode
 
+%% Needed only for highlighting during draft process
+%% Remove for final copy
+\usepackage{xcolor}
+\usepackage{soul}
+
 %% Use one of these two lines for links
 \usepackage{hyperref}            % Special formatting for hyperlinks
 % \usepackage[hidelinks]{hyperref} % No formatting for hyperlinks
@@ -690,10 +695,9 @@ developing novel methods of imaging should have motivation to enter a
 path that results in means to operando analysis. At this point, given
 certain confusion in the field, it is worth clarifying that we
 consider operando measurements to be a small subset of in situ
-science. The condition sine qua non for an operando
-
-experiment is that the cell is not stopped to collect data unless the
-goal is specifically to measure equilibration phenomena.
+science. The condition sine qua non for an operando experiment is that
+the cell is not stopped to collect data unless the goal is
+specifically to measure equilibration phenomena.
 
 While operando measurements are preferred and should be pursued, they
 can present several challenges of varying degrees of difficulty. The
@@ -820,10 +824,10 @@ literature\cite{whittingham2014, balogun2016}. Selected applications
 are grouped by contrast mechanism. X-ray imaging at one or two
 energies close to an absorbption edge can be used to elucidate
 morphology or elemental distribution respectively. While these
-approcahes can provide valuable insight, chemical (XAS) or structural
-(XRD/CDI) imaging generally provides a much richer dataset;
-consequently, many more examples of novel applications are available
-for these two categories.
+approcahes can provide valuable information, chemical (XAS) or
+structural (XRD/CDI) imaging generally provides a richer and more
+insightful dataset; consequently, many more examples of novel
+applications are available for these two categories.
 
 \subsection{Morphology}
 
@@ -893,8 +897,18 @@ electrochemical cycling performance.
 
 \subsection{Chemical Imaging}
 
+\hl{RFC: Does this intro section read well with the ``methods'' description?}
+
 % Chemical imaging introduction
-TODO: Write an intro paragraph to chemical imaging (XANES/XAS)
+Many of the materials used for battery cathode materials do not show
+significant changes in absorbance between the various states
+encountered during operation. X-ray absorbance spectroscopy provides a
+direct measure of the chemical state of individual
+elements. Therefore, it can be used to track the oxidation state of
+the electrochemically active species. This approach is not limited to
+a specific technique: it has proven insightful using hard and soft
+X-rays, K and L absorbance edges, full-field and scanning mircoscopes,
+and in two-dimensional and tomographic imaging modes.
 
 Hard X-ray full field microscopy has seen rather broad applicability
 to questions in battery research. It has effectively been demonstrated
@@ -1061,22 +1075,22 @@ lithiation and suppressed during delithiation.
   \label{figure:lim2016}
 \end{figure}
 
- The only available example of operando chemical imaging in
- three-dimensions highlights the challenge of interpreting projection
- images directly. Wang et al.\ collected a 46-point spectrum across
- the iron K-edge of a \ce{LiFePO4} cathode particle and developed a
- run-out correction system to enable automated tomography. In order to
- accommodate the significant overhead in time required to acquire 2D
- images at different energy and angle, the battery was charged
- extremely slowly (10-100 times slower than would be
- realistic). Nonetheless, the insight collected was noteworthy, with
- the advent of a clear core-shell structure, as shown in figure
- \ref{figure:wang2016}. When considering two-dimensional projections
- from only one angle, it appears as though a mixed state existed
- between the lithiated and delithiated states. Tomographic
- reconstruction reveals that this mixed state is not present anywhere
- in the particle and is merely an artifact of the projection
- process\cite{wang2016}.
+The only available example of operando chemical imaging in
+three-dimensions highlights the challenge of interpreting projection
+images directly. Wang et al.\ collected a 46-point spectrum across the
+iron K-edge of a \ce{LiFePO4} cathode particle and developed a run-out
+correction system to enable automated tomography. In order to
+accommodate the significant overhead in time required to acquire 2D
+images at different energy and angle, the battery was charged
+extremely slowly (10-100 times slower than would be
+realistic). Nonetheless, the insight collected was noteworthy, with
+the advent of a clear core-shell structure, as shown in figure
+\ref{figure:wang2016}. When considering two-dimensional projections
+from only one angle, it appears as though a mixed state existed
+between the lithiated and delithiated states. Tomographic
+reconstruction reveals that this mixed state is not present anywhere
+in the particle and is merely an artifact of the projection
+process\cite{wang2016}.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{wang2016.png}
@@ -1090,7 +1104,19 @@ lithiation and suppressed during delithiation.
 
 
 \subsection{Structural Imaging}
-TODO: Write an intro paragraph to structural imaging (CDI/XRD/HEXRD)
+
+% Intoroduction to structural imaging
+\hl{RFC: Does this intro section read well with the ``methods'' description?}
+
+While measuring oxidation state is a key piece of the story, it is not
+the only factor affecting electrochemical performance: structural
+changes can have a significant impact on the kinetics of the
+underlying transformation. For example, site-mixing in layered
+materials is known to impede lithium diffusion\cite{xu2016-2}. Other
+crystallographic defects can similarly affect the diffusion
+processes. These effects are not captured by measuring oxidation
+state. As a result, the techniques presented here nicely compliment
+the chemical imaging applications presented above.
 
 % Ex-situ diffraction mapping of LFP (that one figure that everyone cites)
 Little work has been done on diffraction mapping of lithium-ion
