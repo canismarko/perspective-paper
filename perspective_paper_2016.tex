@@ -133,19 +133,19 @@ clues for helping meet the high demands placed on current technology.
 X-rays are able to probe various length scales using a variety of
 contrast mechanisms. Compared to electron microscopy, another common
 tool for achieving spatially resolved information from cathode
-materials, X-rays are significantly less damaging to the material in
-most conditions. Additionally, transmission electron microscopy (TEM)
-in particular has stringent requirements for sample thickness, often
-below \SI{100}{nm}. In contrast, the ability to tune the X-ray
-energies offers flexibility in terms of the ability to measure large
-objects. This Perspective focuses on the use of X-ray techniques as a
-means to collect chemical information over various time and length
-scales. It is biased toward techniques that have already seen
-applicability in battery science. In other words, it is not meant to
-be an exhaustive review of all X-ray imaging and mapping techniques
-that may be available. Readers interested in such reviews are referred
-to several papers in the peer-reviewed literature\cite{rose2013,
-  maire2014, monteiro2013, kawahara2015}.
+materials, X-rays are significantly less damaging to the material
+under most circumstances. Additionally, transmission electron
+microscopy (TEM) in particular has stringent requirements for sample
+thickness, often below \SI{100}{nm}. In contrast, the ability to tune
+the X-ray energies offers flexibility in terms of the ability to
+measure large objects. This Perspective focuses on the use of X-ray
+techniques as a means to collect chemical information over various
+time and length scales. It is biased toward techniques that have
+already seen applicability in battery science. In other words, it is
+not meant to be an exhaustive review of all X-ray imaging and mapping
+techniques that may be available. Readers interested in such reviews
+are referred to several papers in the peer-reviewed
+literature\cite{rose2013, maire2014, monteiro2013, kawahara2015}.
 
 \section{Foreword: Definition of Resolution}
 
@@ -247,7 +247,7 @@ scanning (as illustrated in figure \ref{figure:maser2005}). The
 operation of a full-field X-ray microscope is similar to a
 conventional visible light microscope. In a full-field microscope, the
 X-ray beam is first focused down to a few microns. This microbeam
-illuminates the sample, generating a large frame of view. The
+illuminates the sample, generating a large field of view. The
 resulting photons are magnified by a second set of optics before
 reaching the detector.  In this mode, the limit in spatial resolution
 is set by the detector pixel size and any aberrations in the
@@ -282,7 +282,7 @@ Individual images in both full-field and scanning X-ray microscopes
 are generated in two spatial dimensions. However, the two techniques
 offer the capability of 3D imaging using tomography. A tomographic
 reconstruction is achieved by taking a series of two-dimensional
-projection images while the sample is rotated over \ang{180}, followed
+projection images while the sample is rotated over \ang{180} (ideally), followed
 by conversion of these images to a three-dimensional volume. This technique is
 agnostic regarding the contrast mechanism by which the two-dimensional
 projections were created, meaning it can be combined with any X-ray
@@ -359,14 +359,16 @@ scintillator where it is converted to visible light. The total energy
 of this conversion must be conserved, so one high-energy X-ray photon
 results in hundreds of low-energy visible light photons. This light is
 then magnified using visible-light microscopy optics onto a detector,
-usually a charged coupled device (CCD). Any defects in the scintillator are clearly visible in the resulting intensity images so it is important to collect a
-reference frame to remove these features. For scanning microscopy, no
-post-sample optics are required. Instead, a detector measures the
-transmitted intensity at each raster position. Photomultiplier tubes
-(PMTs) have a large collection area, low noise and high gain, making
-them ideal for this application. In some specific scanning microscopy
-methods, a two-dimensional interference pattern is needed at each
-raster position, so a CCD detector is used instead.
+usually a charge-coupled device (CCD). Any defects in the scintillator
+are clearly visible in the resulting intensity images so it is
+important to collect a reference frame to remove these features. For
+scanning microscopy, no post-sample optics are required. Instead, a
+detector measures the transmitted intensity at each raster
+position. Photomultiplier tubes (PMTs) have a large collection area,
+low noise and high gain, making them ideal for this application. In
+some specific scanning microscopy methods, a two-dimensional
+interference pattern is needed at each raster position, so a CCD
+detector is used instead.
 
 The dynamic range of the detector is an important factor to
 consider. CCDs work by exposing a photo-active layer to radiation,
@@ -399,14 +401,14 @@ electrons, elements with higher atomic numbers have a higher
 absorbance. The transmitted intensity drops exponentially with
 increasing penetration length, so it is more convenient to express
 this value as a logarithm of the ratio of incident radiation that is
-actually transmitted; the resulting absorbance value scales linearly
+actually transmitted; the resulting \emph{optical depth} value scales linearly
 with sample thickness provided the material is
 homogeneous. Two-dimensional imaging of heterogeneous samples requires
 a more sophisticated interpretation since thickness and composition
 both affect the absorbance. Once the X-ray energy exceeds that needed
 to promote a core electron, a sharp increase in X-ray absorbance is
 seen, known as an edge. At these energies, core electrons are excited
-either to the unbound continuum or to higher energy unoccupied states
+either to the unbound continuum or to higher-energy unoccupied states
 as allowed by selection rules. Therefore, the specific energy value of
 the transition is indicative of the element and its chemical state
 (eg.\ formal valence state). Each element can potentially have
@@ -435,12 +437,12 @@ interest in spectromicroscopy.
   \label{figure:meirer2011-2}
 \end{figure}
 
-\emph{Fluorescence contrast} is similar to X-ray absorption in that it relies
-on electron excitation. The fluorescence signal, however comes from
-the subsequent light re-emission. For the element of interest, the
-X-ray energy can be set just above the absorption edge. If the
+\emph{Fluorescence contrast} is similar to X-ray absorption in that it
+relies on electron excitation. The fluorescence signal, however, comes
+from the subsequent light re-emission. For the element of interest,
+the X-ray energy can be set just above the absorption edge. If the
 incoming X-ray energy is set above the absorption edge for several
-elements of interest in a sample, they will all fluoresce at different
+elements in a sample, they will all fluoresce at different
 energies. Thus, fluorescence imaging can be advantageous over X-ray
 absorption for gathering elemental distribution, especially in dilute
 samples. If the energy is scanned below and through the edge,
@@ -454,7 +456,7 @@ imaging monitors the changes of the observed phase of X-ray waves, as
 opposed to their amplitude, denoted by the phase shift term,
 $\delta$. These changes are observed as the thickness/density of the
 sample changes. In order to resolve the observed differences in the
-phase shift the detector used must be placed at a sufficient distance
+phase shift, the detector used must be placed at a sufficient distance
 away from the sample. This distance can vary from technique to
 technique; \SI{0.9}{m} has been reported for coherent diffractive
 imaging (a specialized mode of phase contrast imaging described more
@@ -567,10 +569,11 @@ this distinction does not change the structure of the data in a
 significant way. However, it does obviate the need to align each
 image. Rather than a full absorbance spectrum at each location, these
 experiments generate a diffractogram at each position. Theoretically,
-a researcher can analyze the two-diffraction pattern at each position;
-often, the 2D patterns are integrated to form the more traditional 1D
-diffractograms. From here, a refinement can retrieve crystallographic
-parameters, such as unit-cell dimensions, strain or phase ratios.
+a researcher can analyze the two-dimensional diffraction pattern at
+each position; often, the 2D patterns are integrated to form the more
+traditional 1D diffractograms. From here, a refinement can retrieve
+crystallographic parameters, such as unit-cell dimensions, strain or
+phase ratios.
 
 \subsection{The Ultimate Frontier: The Lensless Microscope}
 
@@ -603,7 +606,7 @@ transform is performed on the object and is convolved by the
 illumination probe. The real component is replaced by the recorded
 interference pattern and an inverse Fourier transform is then done to
 recover an improved object. This procedure is carried out for each
-scanning position and then repeated until a solution converges. As a
+scanning position and repeated until a solution converges. As a
 result, the ultimate spatial resolution is, to a large extent,
 independent from the size of the beam used to collect the overlapping
 patterns. In other words, as a lensless technique, the process of
@@ -1307,7 +1310,7 @@ quantitative electroanalysis simultaneous to the observations is not
 possible, inducing a critical loss of information. Further, given the
 ultimate goal of guiding improvements in battery performance, it is
 important that the design of operando cells takes into account the
-importance of preserving the fidelity of the electrochemical responses
+need to preserve the fidelity of the electrochemical responses
 to those that define function in a device.
 
 As the community increases its awareness of the unique capabilities of
