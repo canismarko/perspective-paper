@@ -388,30 +388,30 @@ short and then collect and average multiple frames.
 \subsection{Hyperspectral Imaging}
 
 X-ray microscopy utilizes a multitude of contrast
-mechanisms. \emph{Absorption contrast} relies on the intensity of the X-rays
-that penetrate through the material being imaged. From the physical
-perspective, it involves detecting changes in the amplitude of the
-incoming X-ray wave after interacting with the sample. Most commonly,
-the changes are detected after transmission of the X-ray beam through
-the sample. Thickness and composition of the material are two major
-contributing factors to the X-ray absorption. Therefore, through the
-collection of one signal, both morphological and chemical information
-can be generated. Since X-ray absorbance depends on interaction with
-electrons, elements with higher atomic numbers have a higher
-absorbance. The transmitted intensity drops exponentially with
+mechanisms. \emph{Absorption contrast} relies on the intensity of the
+X-rays that penetrate through the material being imaged. From the
+physical perspective, it involves detecting changes in the amplitude
+of the incoming X-ray wave after interacting with the sample. Most
+commonly, the changes are detected after transmission of the X-ray
+beam through the sample. Thickness and composition of the material are
+two major contributing factors to the X-ray absorption. Therefore,
+through the collection of one signal, both morphological and chemical
+information can be generated. Since X-ray absorbance depends on
+interaction with electrons, elements with higher atomic numbers have a
+higher absorbance. The transmitted intensity drops exponentially with
 increasing penetration length, so it is more convenient to express
 this value as a logarithm of the ratio of incident radiation that is
-actually transmitted; the resulting \emph{optical depth} value scales linearly
-with sample thickness provided the material is
+actually transmitted; the resulting \emph{optical depth} value scales
+linearly with sample thickness provided the material is
 homogeneous. Two-dimensional imaging of heterogeneous samples requires
 a more sophisticated interpretation since thickness and composition
 both affect the absorbance. Once the X-ray energy exceeds that needed
 to promote a core electron, a sharp increase in X-ray absorbance is
-seen, known as an edge. At these energies, core electrons are excited
-either to the unbound continuum or to higher-energy unoccupied states
-as allowed by selection rules. Therefore, the specific energy value of
-the transition is indicative of the element and its chemical state
-(eg.\ formal valence state). Each element can potentially have
+seen, known as an ``edge''. At these energies, core electrons are
+excited either to the unbound continuum or to higher-energy unoccupied
+states as allowed by selection rules. Therefore, the specific energy
+value of the transition is indicative of the element and its chemical
+state (eg.\ formal valence state). Each element can potentially have
 several absorption edges, depending on how many core electron orbitals
 it has. These edges are named based on the electron energy level they
 originate from: ``K-edge'' for $n=1$, ``L-edge'' for $n=2$, ``M-edge''
@@ -440,22 +440,23 @@ interest in spectromicroscopy.
 In spectromicroscopy, whether full-field or scanning, the same
 field-of-view is imaged repeatedly while the energy of the incident
 beam is changed over an absorption edge of the element(s) of
-interest. The resulting frame-stack provides a full
-absorbance and/or phase spectrum at each pixel. These spectra are then
-processed into a scientifically meaningful quantity to generate
-chemical maps of the field-of-view. In order for pixel-wise
-spectroscopic conclusions to be valid, it is critical that the images
-are properly aligned with one another, which is rarely the case with
-raw data-sets. To correct for these inconsistencies, some form of image
-registration is usually necessary. The next step in the analysis
-involves normalization of the spectra relative to the background
-optical depth. As X-ray energy increases, the transmission of all
-materials increases as well. Correcting for this effect improves the
-reliability of analysis methods that involve decomposing the spectra
-into components of known materials\cite{jin2015}. Conversion of the
-resulting absorbance spectra to some figure of scientific merit
-depends in large part on the question being addressed by the
-experiment. A common goal is to map the distribution of certain
+interest. The resulting frame-stack provides a full absorbance and/or
+phase spectrum at each pixel. These spectra are then processed into a
+scientifically meaningful quantity to generate chemical maps of the
+field-of-view. In order for pixel-wise spectroscopic conclusions to be
+valid, it is critical that the images be properly aligned with one
+another, which is rarely the case with raw data-sets. To correct for
+these inconsistencies, some form of image registration is usually
+necessary. The next step in the analysis involves normalization of the
+spectra relative to the background optical depth. As X-ray energy
+increases, the transmission of all materials increases as
+well. Correcting for this effect improves the reliability of analysis
+methods that involve decomposing the spectra into components of known
+materials\cite{jin2015}.
+
+Conversion of the resulting absorbance spectra to some figure of
+scientific merit depends in large part on the question being addressed
+by the experiment. A common goal is to map the distribution of certain
 elements. This goal can be accomplished by collecting two frames per
 element: one above and one below the absorption K-edge. By comparing
 these ``edge-jump'' values for the elements in question, their
@@ -471,21 +472,22 @@ spectrum. In practice, there are generally a lot of spectra to be
 analyzed; a set of $1024\times1024$ frames contains over 1 million
 spectra to be processed. This situation means that analysis cannot
 rely on human intervention. If prior knowledge of the presence and
-distinct spectra of multiple phases in the data-set is available, their
-signals can be decomposed\cite{wang2016,yu2015-2,shapiro2014}. If the
-component spectra are not known, which is often the case, a variety of
-signal processing techniques, such as \emph{independent components
-  analysis} (ICA)\cite{shlens2014} or \emph{Bayesian}
-  methods\cite{knuth2005}, can be used to approximate them and
-extract the relative proportions of each
-component\cite{bioucas2012,duarte2014}. Care must be taken, however,
-since many of these methods assume properties of the data that are not
-necessarily true. \emph{Principal components analysis} is a common
-alternative to ICA that has seen application in spectromicroscopy of
-battery materials \cite{shapiro2014,boesenberg2013}. Another approach
-involves the use of numerical methods to directly map some property of
-the spectrum. This approach is most effective if an argument can be
-made that the directly calculated value correlates strongly with some
+distinct spectra of multiple phases in the data-set is available,
+their signals can be
+decomposed\cite{wang2016,yu2015-2,shapiro2014}. If the component
+spectra are not known, which is often the case, a variety of signal
+processing techniques, such as \emph{independent components analysis}
+(ICA)\cite{shlens2014} or \emph{Bayesian} methods\cite{knuth2005}, can
+be used to approximate them and extract the relative proportions of
+each component\cite{bioucas2012,duarte2014}. Care must be taken,
+however, since many of these methods assume properties of the data
+that are not necessarily true. \emph{Principal components analysis} is
+a common alternative to ICA that has seen application in
+spectromicroscopy of battery materials
+\cite{shapiro2014,boesenberg2013}. Another approach involves the use
+of numerical methods to directly map some property of the
+spectrum. This approach is most effective if an argument can be made
+that the directly calculated value correlates strongly with some
 change in the properties or state of the material. For example, the
 oxidation state of nickel in several layered battery cathode materials
 is accompanied by a shift in the edge and whiteline positions of the
@@ -551,13 +553,13 @@ phase ratios.
 
 \subsection{The Ultimate Frontier: The Lensless Microscope}
 
-An alternative to imaging of absorbance and diffraction events, \emph{phase contrast}
-imaging monitors the changes of the observed phase of X-ray waves, as
-opposed to their amplitude, denoted by the phase shift term,
-$\delta$. These changes are observed as the thickness/density of the
-sample changes. In order to resolve the observed differences in the
-phase shift, the detector used must be placed at a sufficient distance
-away from the sample. This distance can vary from technique to
+An alternative to imaging of absorbance and diffraction events,
+\emph{phase contrast} imaging monitors the changes of the observed
+phase of X-ray waves, as opposed to their amplitude, denoted by the
+phase shift term, $\delta$. These changes are observed as the
+thickness/density of the sample changes. In order to resolve the
+observed differences in the phase shift, the detector is generally
+placed far behind the sample. The distance can vary from technique to
 technique; \SI{0.9}{m} has been reported for coherent diffractive
 imaging (a specialized mode of phase contrast imaging described more
 fully below)\cite{shpyrko2014}, while \SI{108}{cm} has been reported
