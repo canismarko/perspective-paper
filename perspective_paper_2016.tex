@@ -232,14 +232,9 @@ monochromators upstream from the end station. In contrast, laboratory
 sources only produce a limited range of X-ray energies, which is
 non-trivial to tune. While some techniques fully utilize the white
 beam\cite{ice2009}, it is more common to select a single desired
-wavelength and change it during the experiment.  Different energy
-regimes are defined in the X-ray community. Typically, X-rays with
-energies below $\sim$\SI{2000}{eV} are termed ``soft'', whereas
-beamlines operating in the ``hard'' X-ray regime achieve values above
-$\sim$\SI{4000}{eV}. The intermediate regime between ``soft'' and
-``hard'' is often termed ``tender''.  The high intensity, brightness
-and tunability renders synchrotrons as the preferred light sources for
-chemical imaging.
+wavelength and change it during the experiment. The high flux,
+brightness and tunability renders synchrotrons as the preferred light
+sources for chemical imaging.
 
 \subsection{Methods of X-ray Microscopy}
 
@@ -451,7 +446,8 @@ a sophisticated detector. A full complex refractive index can be
 acquired using phase contrast, by collecting data over a range of
 energy points. This information will also be dependent on the
 electronic structure of the sample, but, due to its complexity, this
-method of spectromicroscopy remains under development\cite{shapiro2014}.
+method of spectromicroscopy remains under development\cite{X-ray
+  refractive microscopy paper}.
 
 In spectromicroscopy, whether full-field or scanning, the same
 field-of-view is imaged repeatedly while the energy of the incident
@@ -582,9 +578,15 @@ collecting the full diffraction pattern using coherent
 diffraction. Unlike CDI, this is a scanning technique; small spots are
 collected in such a fashion that they spatially overlap on the
 sample. Similar to CDI, ptychography utilizes an iterative algorithm
-to reconstruct an image from the diffraction patterns. As a result,
-the ultimate spatial resolution is, to a large extent, independent
-from the size of the beam used to collect the overlapping
+to reconstruct an image from the diffraction patterns. A random object
+image is first generated. For each scanning position, a Fourier
+transform is performed on the object and is convolved by the
+illumination probe. The real component is replaced by the recorded
+interference pattern and an inverse Fourier transform is then done to
+recover an improved object. This procedure is carried out for each
+scanning position and repeated until a solution converges. As a
+result, the ultimate spatial resolution is, to a large extent,
+independent from the size of the beam used to collect the overlapping
 patterns. Artifacts from the reconstruction process sometimes manifest
 as high frequency bands alongside sharp edges in the specimen. Since
 this technique is driven by an interference pattern, the best
@@ -671,8 +673,8 @@ developing novel methods of imaging should have motivation to enter a
 path that results in means to operando analysis. At this point, given
 certain confusion in the field, it is worth clarifying that we
 consider operando measurements to be a small subset of in situ
-science. The condition \emph{sine qua non} for an operando experiment is that
-the cell is not stopped to collect data unless the goal is
+science. The condition \emph{sine qua non} for an operando experiment
+is that the cell is not stopped to collect data unless the goal is
 specifically to measure equilibration phenomena.
 
 While operando measurements are preferred and should be pursued, they
@@ -786,24 +788,24 @@ opportunities for rich insight into battery operating conditions.
 
 \section{Applications of X-Ray Imaging to Problems in Battery Research}
 
-In this section, we describe representative case studies that
+In this section, we describe representative case studies that serve to
 highlight the power and versatility of X-ray imaging to elucidate
 phenomena occurring in battery materials. This section is not meant to
 be exhaustive, but mostly focuses on examples of materials for Li-ion
 battery electrodes, with an emphasis on those containing transition
 metals. The reason for the choice of Li-ion devices is that they are
 the most pervasive battery systems in the research literature (aside
-from being the most commercially relevant), with examples that fully
-exploit the current capabilities in X-ray imaging. These capabilities
-are not dependent on the device, and, thus can be applied to many
-other battery problems. Indeed, studies of other battery systems with
-these techniques exist in the literature, exploiting the same features
-discussed below. For the sake of conciseness, only the chemical
-identity and a brief mention of the insight gained by the imaging of
-each electrode material will be presented. For an extensive discussion
-of the current body of knowledge of electrochemical reactions in the
-battery materials discussed here, the reader is referred again to
-reviews available in the peer-reviewed
+from being the most commercially relevant), with examples available
+that fully exploit the current capabilities in X-ray imaging. These
+capabilities are not dependent on the device, and, thus can be applied
+to many other battery problems. Indeed, studies of other battery
+systems with these techniques exist in the literature, exploiting the
+same features discussed below. For the sake of conciseness, only the
+chemical identity and a brief mention of the insight gained by the
+imaging of each electrode material will be presented. For an extensive
+discussion of the current body of knowledge of electrochemical
+reactions in the battery materials discussed here, the reader is
+referred again to reviews available in the peer-reviewed
 literature\cite{whittingham2014, balogun2016}. Selected applications
 are grouped by contrast mechanism. X-ray imaging at one or two
 energies close to an absorption edge can be used to elucidate
@@ -817,56 +819,53 @@ generally provides increased insight.
 Absorption imaging at a single X-ray energy provides a direct look at
 the internal morphology of the material. The short acquisition times
 and relatively straightforward technical requirements mean that high
-temporal resolutions can be achieved. Paul Shearing \emph{et
-  al.}\ used full-field X-ray microscopy to characterize thermal
-runaway in an 18650 cell with a time resolution of
-\SI{800}{\micro\second}\cite{shearing2015}. This represents one
-extreme of the resolution triangle, where no chemical contrast is
-provided and spatial information is limited to two-dimensional
-projections. The result was a high frame-rate movie showing the
-initial distortion of electrode layers followed by gas formation and
-finally the catastrophic structural failure of the cell.
+temporal resolutions can be achieved. For instance, full-field X-ray
+microscopy has been used to visualize the fate of the components of a
+battery during thermal runaway with a time resolution of
+\SI{800}{\micro\second}\cite{shearing2015}. The result was a high
+frame-rate movie, with no chemical contrast, showing the initial
+distortion of electrode layers followed by gas formation and finally
+the catastrophic structural failure of the cell.
 
 %% Intro to 3D morphology
 Tomography solves a common problem where interpretation of two
 dimensional imaging data is confounded by the fact that the measured
 intensity at each position is a projection through the entire
-specimen. Operando tomography will be a key technique in achieving a
-thorough understanding of battery material mechanisms. Tomographic
-morphology imaging can even be achieved with laboratory X-ray
-microscopes\cite{shearing2014-2}. Despite the lack of direct chemical
-information, this technique can illuminate details of the underlying
-mechanism, as illustrated by some recent publications. In conversion
+specimen. Tomographic imaging of batteries can even be achieved with
+laboratory X-ray microscopes\cite{shearing2014-2}. The imaging of
+electrode morphology can reveal useful information regarding electrode
+performance. For example, the novel use of a heat-transfer model to
+extract tortuosity and porosity data from three dimensional electrode
+volumes revealed significant anisotropy and heterogeneity in the pore
+structure, generating unique new inputs for continuum models with the
+goal to explain and predict electrode
+behavior\cite{shearing2014}. Even when no direct chemical information
+is obtained, this technique can still illuminate details of the
+underlying mechanism of electrochemical reaction. In conversion
 reactions, mixtures of relatively heavy metallic particles and
 \ce{Li2O} are formed\cite{cabana2010-2}. Since the differences in
 attenuation coefficients of the different species are quite large,
 quantification of changes in contrast in the image can be used to
 create pseudo-chemical maps. This approach is relatively fast, since
-data collection occurs at only one X-ray energy. This idea was first
-exploited by Ebner et al.\ to study the reduction of tin oxide. A
-core-shell mechanism was observed as well as detailed information
-about crack initiation and growth. They also compared particle-level
-volume changes and their relationship to the expansion of the
-electrode as a whole. They found that the particles expand beyond the
-tolerance of the supporting matrix, which has implications for the
-reversibility of the reaction\cite{ebner2013}. A similar approach to
-the analysis of individual tin oxide particles during the first two
-charge-discharge cycles showed significant fracturing and
-pulverization, with an accompanying loss in reversible
-capacity\cite{wang2014-2}. This single-energy approach to acquiring
-chemical contrast is only valid for three-dimensional imaging since in
-two-dimensions the intensity of a given pixel is heavily influenced by
-the thickness of the sample at that point. Another limitation is that
-majority of reactions of interest in batteries involve compounds that
-do not show significant differences in attenuation coefficient. In
-these cases, advanced tomographic techniques are needed, as discussed
-below. Even in intercalation materials, where optical density does not
-change significantly with charge-state, morphology can still reveal
-useful information regarding the electrode performance. For example,
-the novel use of a heat-transfer model to extract tortuosity and
-porosity data from three dimensional electrode volumes revealed
-significant anisotropy and heterogeneity in the pore structure, with
-implications for modeling electrode behavior\cite{shearing2014}.
+data collection still occurs at only one X-ray energy. The idea was
+first exploited by Ebner et al.\ to study the reduction of tin oxide
+to tin with microscale spatial resolution. A core-shell mechanism was
+observed, combined with insight into crack initiation and growth. They
+also compared particle-level volume changes and their relationship to
+the expansion of the electrode as a whole. They found that the
+particles expand beyond the tolerance of the supporting matrix, which
+has implications for the reversibility of the
+reaction\cite{ebner2013}. A similar approach was applied to nanoscale
+imaging of individual tin oxide particles, generating new details on
+particle fracturing and pulverization\cite{wang2014-2}. This
+single-energy approach to acquiring chemical contrast is only valid
+for three-dimensional imaging, since, in two-dimensions, the intensity
+of a given pixel is heavily influenced by the thickness of the sample
+at that point. Another limitation is that the majority of reactions of
+interest in batteries involve compounds that do not show significant
+differences in attenuation coefficient. In these cases, tomographic
+techniques with chemical contrast are needed.
+
 
 \subsection{Elemental Distribution}
 %% Elemental distribution examples
@@ -878,13 +877,16 @@ depletion of the transition metals at the surface of the particle,
 accompanied by manganese segregation. Another example used this
 technique to track transition metal distribution across multiple
 cycles in a particle of mixed transition metal oxide
-\ce{LiNi_{0.4}Mn_{0.4}Co_{0.2}O_2}\cite{lin2016}. The authors showed
+\ce{LiNi_{0.4}Mn_{0.4}Co_{0.2}O_2}\cite{lin2016}. The authors
+associated improvements in cycling performance with the existence of
 an excess of manganese and a depletion of cobalt and nickel at the
-surface of the particles when using specially designed materials. It
-is known that an irreversible conversion of nickel to a reduced
-rock-salt phase occurs at the surfaces in these materials. This low
-cobalt/nickel material shows a subsequent improvement in high-voltage
-electrochemical cycling performance.
+surface of the particles. The improvement was rationalized through a
+lower extent of irreversible conversion of nickel-containing layered
+oxide domains to a reduced rock-salt phase, which is known to be
+detrimental to charge transfer at the surfaces in these
+materials.[*********ADD CITATION: an example in the form of a paper
+  that focuses on this topic, regardless of technical methods*******]
+
 
 \subsection{Chemical Imaging}
 
@@ -901,15 +903,15 @@ X-rays, K and L absorbance edges, full-field and scanning microscopes,
 and in two-dimensional and tomographic imaging modes.
 
 Hard X-ray full-field microscopy has seen rather broad applicability
-to questions in battery research. It has effectively been demonstrated
-to locate delithiation domains in olivine-type \ce{LiFePO4}
-microcrystals, and subsequent morphological events, such as fracture
-were identified\cite{boesenberg2013}. However, the spatial resolution
-of a hard TXM, $\sim$\SI{30}{nm}, did not allow for a specific
-correlation between chemical domains and fracture points. To achieve
-this knowledge, soft X-ray absorption spectroscopy coupled with
-ptychographic microscopy was required in order to gather information
-at the highest spatial resolution possible today. Yu et
+to questions in battery research. As an example, it has effectively
+been demonstrated to locate delithiation domains in olivine-type
+\ce{LiFePO4} microcrystals, and subsequent morphological events, such
+as fracture, were identified\cite{boesenberg2013}. However, the
+spatial resolution of a hard TXM, $\sim$\SI{30}{nm}, did not allow for
+a specific correlation between chemical domains and fracture
+points. To achieve this knowledge, soft X-ray absorption spectroscopy
+coupled with ptychographic microscopy was required in order to gather
+information at the highest spatial resolution possible today. Yu et
 al.\ investigated how crystal size impacts the transformation of
 \ce{LiFePO4} to \ce{FePO4}\cite{yu2015-2}. Chemical maps were
 successfully produced for particles ranging from <\SI{100}{nm} to
@@ -947,21 +949,20 @@ nanoparticles\cite{yu2015-2}.
 \end{figure}
 
 % Ex-situ XANES TXM Tomography of NiO (Cabana/Meirer paper)
-Combining tomography and XANES microscopy generates a very rich
-data-set that provides a window into the chemical environment at every
-point in the specimen. Meirer et al.\ used 3D XANES to probe the
-conversion of NiO to Ni metal in a discharged battery
-cathode\cite{meirer2011}. By comparing the spectra in a sample where
-the transformation was only 50\% complete to the spectra of known
-reference materials, they assigned each voxel (3D pixel) to either
-\ce{NiO}, \ce{Ni} metal or a 50:50 mixture of the two. Additionally,
-they analyzed virtual slices through the three-dimensional particle to
-determine how the chemical states were distributed. They found
-significant inhomogeneities across the particle that depended on its
-size, as well as evidence of fracturing caused by volume expansion
-during the reaction. In this case, fracture was revealed as the
-enabler of the phase progression into the particle, which critically
-relies on microstructural formatting to reach completion.
+Combining tomography and XANES microscopy generates a rich data-set
+that provides a window into the chemical environment at every point in
+the specimen. Meirer et al.\ used 3D XANES to probe the conversion of
+NiO to Ni metal in a partly reduced electrode\cite{meirer2011}. By
+comparing the spectra to known reference materials, they assigned each
+voxel (3D pixel) to either \ce{NiO}, \ce{Ni} metal or a 50:50 mixture
+of the two. Additionally, they analyzed virtual slices through the
+three-dimensional particle to determine how the chemical states were
+distributed. They found significant inhomogeneities across the
+particle that depended on its size, as well as evidence of fracturing
+caused by volume expansion during the reaction. In this case, fracture
+was revealed as the enabler of the phase progression into the
+particle, which critically relies on microstructural formatting to
+reach completion.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{meirer2011.png}
@@ -972,35 +973,34 @@ relies on microstructural formatting to reach completion.
 \end{figure}
 
 % Operando TXM Cu-O K-edge XANES
-Performing these types of measurements operando has the ability to
-provide insights that are not available with other techniques. The
-first demonstration of operando X-ray spectromicroscopy using a
-full-field technique involved the study of the reduction of CuO
-particles inside a coin-cell modified with Kapton
-windows\cite{wang2013}. A distinct shell of reduced copper metal was
-seen surrounded by an unreacted \ce{CuO} core, along with an
-intermediate \ce{Cu2O} phase. A further iteration of this coin-cell
-design was developed by Yu et al.\ and used to study \ce{LiMn2O4}
-spinel crystals. In order to improve resolution across the board, the
-emphasis in the design was placed on minimizing the thickness of
-absorbing materials, such as aluminum, and, for instance, it relied on
-\SI{1}{\micro\meter} thick silicon nitride windows. The design was
-applied to the study of the transformation \ce{Li2Mn2O4}
-$\rightleftharpoons$ \ce{LiMn2O4} $\rightleftharpoons$
-\ce{Mn2O4}\cite{ohzuku1990}. During the experiment, the authors found
-significant local effects in the oxidation of the particles, wherein
-oxidized \ce{LiMn2O4} regions formed and propagated through the
-crystal. Additionally, a reduced tetragonal \ce{Li2Mn2O4} phase
-persisted at potentials well above its predicted stability, according
-to the phase diagram, leading to a non-equilibrium coexistence with
-highly oxidized phases. These observations would probably not have
-been possible under ex situ conditions, where the chemical states are
-expected to equilibrate. At higher potentials, several cracks in the
-crystals were seen that correlated with preferential oxidation to the
-fully delithiated \ce{Mn2O4} phase, as seen in figure
-\ref{figure:yu2015}. The authors speculated that these cracks provide
-additional, fresh interfaces to facilitate phase
-transformation\cite{yu2015}.
+Performing X-ray spectromicroscopy operando has the ability to provide
+insights that are not available with other techniques. The first
+demonstration of operando measurements using a full-field technique
+involved the study of the reduction of CuO particles inside a
+coin-cell modified with Kapton windows\cite{wang2013}. A distinct
+shell of reduced copper metal was seen surrounded by an unreacted
+\ce{CuO} core, along with an intermediate \ce{Cu2O} phase. A further
+iteration of this coin-cell design was developed by Yu et al.\ and
+used to study \ce{LiMn2O4} spinel crystals. In order to improve
+resolution across the board, the emphasis in the design was placed on
+minimizing the thickness of absorbing materials, such as aluminum,
+and, for instance, it relied on \SI{1}{\micro\meter} thick silicon
+nitride windows. The design was applied to the study of the
+transformation \ce{Li2Mn2O4} $\rightleftharpoons$ \ce{LiMn2O4}
+$\rightleftharpoons$ \ce{Mn2O4}\cite{ohzuku1990}. During the
+experiment, the authors found significant local effects in the
+oxidation of the particles, wherein oxidized \ce{LiMn2O4} regions
+formed and propagated through the crystal. Additionally, a reduced
+tetragonal \ce{Li2Mn2O4} phase persisted at potentials well above its
+predicted stability, according to the phase diagram, leading to a
+non-equilibrium coexistence with highly oxidized phases. These
+observations would probably not have been possible under ex situ
+conditions, where the chemical states are expected to equilibrate. At
+higher potentials, several cracks in the crystals were seen that
+correlated with preferential oxidation to the fully delithiated
+\ce{Mn2O4} phase, as seen in figure \ref{figure:yu2015}. The authors
+speculated that these cracks provide additional, fresh interfaces to
+facilitate phase transformation\cite{yu2015}.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{yu2015}
@@ -1017,39 +1017,43 @@ transformation\cite{yu2015}.
   \label{figure:yu2015}
 \end{figure}
 
-Several other recent examples of operando TXM are worth
-highlighting. A study of \ce{LiFePO4} provided details about the phase
-propagation mechanism and revealed inhomogeneities in the distribution
-of oxidized materials between multiple particles\cite{wang2014}. Li et
+Sustained technical insight into battery reactions from operando
+spectromicroscopy followed these two studies. A study of \ce{LiFePO4}
+provided details revealed inhomogeneities in the distribution of
+oxidized materials between multiple particles\cite{wang2014}. Li et
 al.\ studied \ce{FeF3} and showed that the capacity loss seen in this
 material is due to incomplete conversion from \ce{Fe} to \ce{Fe3+}
-during charging\cite{jin2015}. Another example further elucidates the
-role of oxygen species in lithium-air batteries. Olivares et
-al.\ looked at the formation of surface barriers, similar to the
-solid-electrolyte interface, on a carbon substrate. By examining the
-oxygen K-edge, they showed a relationship between particle morphology
-and the preference for forming carbonate, peroxide, and superoxide
-species\cite{olivares2015}. The authors argued that the reactive and
-short-lived nature of some of these oxygen species ensures that
-meaningful results cannot be obtained without operando measurements.
+during charging\cite{jin2015}. Beyond Li-ion, another example further
+elucidates the role of oxygen species in lithium-air
+batteries. Olivares et al.\ looked at the formation of surface
+barriers, similar to the solid-electrolyte interface, on a carbon
+substrate. By examining the oxygen K-edge, they showed a relationship
+between particle morphology and the preference for forming carbonate,
+peroxide, and superoxide species\cite{olivares2015}. The authors
+argued that the reactive and short-lived nature of some of these
+oxygen species ensures that meaningful results cannot be obtained
+without operando measurements.
 
 % Soft XAS  of LFP
-Thanks to advances in the design of operando cells brought about by
-microfluidics, scanning TXM using soft X-rays has been recently
-demonstrated, and used to probe the spatial dynamics of \ce{LiFePO4}
-particles\cite{lim2016}. The authors were able to collect chemical
-images at a variety of rates while gathering reliable electrochemical
-data. Linear combination fitting was used to create maps of lithiated
-and delithiated material. It was found that the pathways upon
-lithiation and delithiation were strikingly different depending on the
-conditions of cycling. Thanks to the quality of the data, the authors
-were also able to extract the current density for actively
-(de)intercalating pixels. They found a strong dependence of the
-exchange current density ($j_0$) and the degree of lithiation ($x$ in
-\ce{Li_xFePO4}), as shown in figure
-\ref{figure:lim2016}. Heterogeneities initially caused by other
-sources are then amplified by this positive feedback mechanism during
-lithiation and suppressed during delithiation.
+A significant advance in the quality of operando spectromicroscopy
+recently occurred thanks to advances in the design of cells brought
+about by microfluidics. The use of these cells is nicely explemplified
+by a study of the spatial dynamics of \ce{LiFePO4} particles during
+the electrochemical reation using soft X-ray scanning
+TXM\cite{lim2016}. The reliability and control afforded by the
+microfluidic design enabled the collection of chemical images at a
+variety of rates while gathering reliable and meaningful
+electrochemical data. Linear combination fitting was used to create
+maps of lithiated and delithiated material. It was found that the
+pathways upon lithiation and delithiation were strikingly different
+depending on the conditions of cycling. Thanks to the quality of the
+data, the authors were also able to extract the current density for
+actively (de)intercalating pixels. They found a strong dependence of
+the exchange current density ($j_0$) and the degree of lithiation ($x$
+in \ce{Li_xFePO4}), as shown in figure
+\ref{figure:lim2016}. Heterogeneities were amplified by this positive
+feedback mechanism during lithiation and suppressed during
+delithiation.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{lim2016.png}
@@ -1066,14 +1070,14 @@ lithiation and suppressed during delithiation.
 \end{figure}
 
 The only available example of operando chemical imaging in
-three-dimensions highlights the challenge of interpreting projection
-images directly. Wang et al.\ collected a 46-point spectrum across the
-iron K-edge of a \ce{LiFePO4} cathode particle and developed a run-out
-correction system to enable automated tomography. In order to
-accommodate the significant overhead in time required to acquire 2D
-images at different energies and angles, the battery was charged
-extremely slowly (10-100 times slower than would be
-realistic). Nonetheless, the insight collected was noteworthy, with
+three-dimensions highlights the challenge of interpreting
+two-dimensional projection images directly. Wang et al.\ collected a
+46-point spectrum across the iron K-edge of a \ce{LiFePO4} cathode
+particle and developed a run-out correction system to enable automated
+tomography. In order to accommodate the significant overhead in time
+required to acquire 2D images at different energies and angles, the
+battery was charged extremely slowly (10-100 times slower than would
+be realistic). Nonetheless, the insight collected was noteworthy, with
 the advent of a clear core-shell structure, as shown in figure
 \ref{figure:wang2016}. When considering two-dimensional projections
 from only one angle, it appeared as though a mixed state existed
@@ -1092,20 +1096,19 @@ particle\cite{wang2016}.
   \label{figure:wang2016}
 \end{figure}
 
-
-\subsection{Structural Imaging}
-
-% Intoroduction to structural imaging
+% Introduction to structural imaging
 Even though chemical oxidation state is of primary interest in
 electrochemical reactions, it is not the only factor affecting
 performance: structural changes can have a significant impact on the
-kinetics of the underlying transformation. For example, site-mixing in
-layered materials is known to impede lithium diffusion\cite{xu2016-2},
-which reduces the power capability of the cathode. These and other
-defects are not captured when measuring oxidation state, but are well
-suited to investigation by diffraction-based techniques. As a result,
-the applications presented here nicely complement the absorbance-based
-chemical imaging presented above.
+kinetics of the underlying transformation. For example, they are
+meaningful indications of the presence of misfit strains during
+transformation, which can lead to the fracture events detected by
+imaging above.[********ADD CITATION to
+  http://pubs.rsc.org/en/Content/ArticleLanding/2012/EE/C2EE21874G#!divAbstract******]
+These strain effects are not captured when measuring oxidation state,
+but are well suited to investigation by diffraction-based
+techniques. As a result, the applications presented here nicely
+complement the absorbance-based chemical imaging presented above.
 
 % Ex-situ diffraction mapping of LFP (that one figure that everyone cites)
 Little work has been done on diffraction mapping of lithium-ion
