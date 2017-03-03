@@ -200,11 +200,14 @@ seal and the arrangement of the metallic anode\cite{guinebretiere}.
 
 Synchrotron radiation is also generated from accelerating charged
 particles, but provides higher intensity and better coherence than is
-currently possible with laboratory sources. The particles, typically
-electrons, are first accelerated to relativistic speeds, at which
-point they enter the storage ring of the synchrotron. Beamlines are
-built tangential to the storage ring so as to utilize X-ray radiation
-generated when the particles are subjected to centripetal
+currently possible with laboratory sources. Unlike laboratory sources,
+which are broadly available, synchrotrons require very large areal
+footprints and, thus, are part of central facilities that are open to
+users worldwide through a competitive proposal system. The particles,
+typically electrons, are first accelerated to relativistic speeds, at
+which point they enter the storage ring of the synchrotron. Beamlines
+are built tangential to the storage ring so as to utilize X-ray
+radiation generated when the particles are subjected to centripetal
 acceleration, either through bending magnets or insertion devices,
 such as wigglers and undulators. Bending magnets serve two
 purposes. First, they are placed in such a way that the charged
@@ -229,9 +232,14 @@ monochromators upstream from the end station. In contrast, laboratory
 sources only produce a limited range of X-ray energies, which is
 non-trivial to tune. While some techniques fully utilize the white
 beam\cite{ice2009}, it is more common to select a single desired
-wavelength and change it during the experiment. The high flux,
-brightness and tunability renders synchrotrons as the preferred light
-sources for chemical imaging.
+wavelength and change it during the experiment.  Different energy
+regimes are defined in the X-ray community. Typically, X-rays with
+energies below $\sim$\SI{2000}{eV} are termed ``soft'', whereas
+beamlines operating in the ``hard'' X-ray regime achieve values above
+$\sim$\SI{4000}{eV}. The intermediate regime between ``soft'' and
+``hard'' is often termed ``tender''.  The high intensity, brightness
+and tunability renders synchrotrons as the preferred light sources for
+chemical imaging.
 
 \subsection{Methods of X-ray Microscopy}
 
@@ -443,8 +451,7 @@ a sophisticated detector. A full complex refractive index can be
 acquired using phase contrast, by collecting data over a range of
 energy points. This information will also be dependent on the
 electronic structure of the sample, but, due to its complexity, this
-method of spectromicroscopy remains under development.\cite X-ray
-refractive microscopy paper]
+method of spectromicroscopy remains under development\cite{shapiro2014}.
 
 In spectromicroscopy, whether full-field or scanning, the same
 field-of-view is imaged repeatedly while the energy of the incident
@@ -575,15 +582,9 @@ collecting the full diffraction pattern using coherent
 diffraction. Unlike CDI, this is a scanning technique; small spots are
 collected in such a fashion that they spatially overlap on the
 sample. Similar to CDI, ptychography utilizes an iterative algorithm
-to reconstruct an image from the diffraction patterns. A random object
-image is first generated. For each scanning position, a Fourier
-transform is performed on the object and is convolved by the
-illumination probe. The real component is replaced by the recorded
-interference pattern and an inverse Fourier transform is then done to
-recover an improved object. This procedure is carried out for each
-scanning position and repeated until a solution converges. As a
-result, the ultimate spatial resolution is, to a large extent,
-independent from the size of the beam used to collect the overlapping
+to reconstruct an image from the diffraction patterns. As a result,
+the ultimate spatial resolution is, to a large extent, independent
+from the size of the beam used to collect the overlapping
 patterns. Artifacts from the reconstruction process sometimes manifest
 as high frequency bands alongside sharp edges in the specimen. Since
 this technique is driven by an interference pattern, the best
