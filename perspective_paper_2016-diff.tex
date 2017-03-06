@@ -1,7 +1,7 @@
 \documentclass[journal=cmatex,manuscript=perspective]{achemso}
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL perspective_paper_2016-original.tex   Fri Mar  3 11:59:12 2017
-%DIF ADD perspective_paper_2016.tex            Sat Mar  4 21:36:18 2017
+%DIF ADD perspective_paper_2016.tex            Mon Mar  6 11:00:53 2017
 
 \usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
 \usepackage[T1]{fontenc}       % Use modern font encodings
@@ -404,14 +404,14 @@ X-rays\cite{kirkpatrick1948}.
 
 Diffractive optics are an alternative option. They are predominant in
 the soft X-ray regime, but are also compatible with hard X-ray
-radiation. Fresnel Zone Plates (FZP) utilize several concentric rings
+radiation. Fresnel \DIFdelbegin \DIFdel{Zone Plates }\DIFdelend \DIFaddbegin \DIFadd{zone plates }\DIFaddend (FZP) utilize several concentric rings
 of alternating opaque and transparent zones\DIFaddbegin \DIFadd{, decreasing in width as a
 function of distance from the center}\DIFaddend . In this way, the diffracted
 X-rays from the transparent sections of the optic will undergo
 constructive interference, focusing to a point. \DIFdelbegin \DIFdel{Zones that are
 farther from the center of the optic have shorter widths. }\DIFdelend The maximum amount
 that the beam can be focused is inversely related to the width \DIFdelbegin \DIFdel{is }\DIFdelend of the
-outermost \DIFdelbegin \DIFdel{zone}\DIFdelend \DIFaddbegin \DIFadd{ring}\DIFaddend .  Multi-layer Laue Lenses (MLL) are similar to FZPs, in
+outermost \DIFdelbegin \DIFdel{zone}\DIFdelend \DIFaddbegin \DIFadd{ring}\DIFaddend .  Multi-layer Laue \DIFdelbegin \DIFdel{Lenses }\DIFdelend \DIFaddbegin \DIFadd{lenses }\DIFaddend (MLL) are similar to FZPs, in
 that they use zones to achieve focusing. However, MLLs use
 one-dimensional zones rather than rings. Because of this, they can be
 synthesized using thin film deposition, which allows for smaller
@@ -533,9 +533,14 @@ around the resulting diffraction rings.
 
 \DIFaddend \section{Mechanisms of Chemical Contrast}
 
-\subsection{Hyperspectral Imaging}
+\DIFdelbegin \subsection{\DIFdel{Hyperspectral Imaging}}
+%DIFAUXCMD
+\addtocounter{subsection}{-1}%DIFAUXCMD
+\DIFdelend %DIF > % \subsection{Hyperspectral Imaging}
 
-X-ray microscopy utilizes a multitude of contrast
+\DIFaddbegin \subsection{\DIFadd{Spectromicroscopy}}
+
+\DIFaddend X-ray microscopy utilizes a multitude of contrast
 mechanisms. \emph{Absorption contrast} relies on the intensity of the
 X-rays that penetrate through the material being imaged. From the
 physical perspective, it involves detecting changes in the amplitude
@@ -604,11 +609,10 @@ spectra, in a manner that is compatible with spectromicroscopy. This
 approach was recently demonstrated in battery
 materials.\cite{chueh2015}.
 
-\DIFdelbegin \DIFdel{An alternative to imaging of absorbanceevents,
-}\emph{\DIFdel{phase contrast}}
+\DIFdelbegin \DIFdel{An alternative to imaging of absorbanceevents, }\emph{\DIFdel{phase contrast}}
 %DIFAUXCMD
-\DIFdel{imaging monitors }\DIFdelend \DIFaddbegin \emph{\DIFadd{Phase contrast}} \DIFadd{imaging is an alternative to absorbance. In it,
-}\DIFaddend the changes of the observed phase of X-ray waves, as opposed to their
+\DIFdel{imaging monitors }\DIFdelend \DIFaddbegin \emph{\DIFadd{Phase contrast}} \DIFadd{imaging is an alternative to absorbance: }\DIFaddend the
+changes of the observed phase of X-ray waves, as opposed to their
 amplitude, \DIFdelbegin \DIFdel{denoted by the phase shift term,
 $\delta$}\DIFdelend \DIFaddbegin \DIFadd{are monitored}\DIFaddend . These changes are observed as the
 thickness/density of the sample changes. In order to resolve the
@@ -634,8 +638,8 @@ often used to study materials that do not absorb strongly or \DIFdelbegin \DIFde
 }\DIFaddend sensitive to radiation damage\DIFdelbegin \DIFdel{caused by high
 energy X-rays}\DIFdelend . A drawback for some, phase contrast
 imaging heavily relies upon a highly coherent X-ray source, as well as
-a sophisticated detector. A full complex refractive index can be
-acquired using phase contrast, by collecting data over a range of
+a sophisticated detector. A \DIFdelbegin \DIFdel{full complex refractive index }\DIFdelend \DIFaddbegin \DIFadd{complex-valued refraction spectrum }\DIFaddend can be
+acquired using phase contrast \DIFdelbegin \DIFdel{, }\DIFdelend by collecting data over a range of
 energy points. This information will also be dependent on the
 electronic structure of the sample\DIFaddbegin \DIFadd{, but, due to its complexity, this
 method of spectromicroscopy remains under
@@ -1002,7 +1006,7 @@ opportunities for rich insight into battery operating conditions.
 In this section, we describe \DIFaddbegin \DIFadd{representative }\DIFaddend case studies that \DIFaddbegin \DIFadd{serve to
 }\DIFaddend highlight the power and versatility of X-ray imaging to elucidate
 phenomena occurring in battery materials. \DIFdelbegin \DIFdel{As a result, this }\DIFdelend \DIFaddbegin \DIFadd{This }\DIFaddend section is not meant to
-be exhaustive\DIFdelbegin \DIFdel{. We mostly focus }\DIFdelend \DIFaddbegin \DIFadd{, but mostly focuses }\DIFaddend on examples of \DIFdelbegin \DIFdel{electrode materials }\DIFdelend \DIFaddbegin \DIFadd{materials for Li-ion
+be exhaustive\DIFdelbegin \DIFdel{. We mostly focus }\DIFdelend \DIFaddbegin \DIFadd{, mostly focusing }\DIFaddend on examples of \DIFdelbegin \DIFdel{electrode materials }\DIFdelend \DIFaddbegin \DIFadd{materials for Li-ion
 battery electrodes, with an emphasis on those }\DIFaddend containing transition
 metals\DIFdelbegin \DIFdel{, as }\DIFdelend \DIFaddbegin \DIFadd{. The reason for the choice of Li-ion devices is that }\DIFaddend they are
 the most pervasive \DIFdelbegin \DIFdel{in the
@@ -1750,9 +1754,9 @@ process\mbox{%DIFAUXCMD
 
 The impact that X-ray imaging and mapping have already had in our
 understanding of electrochemical reactions relevant to batteries is
-significant. This perspective demonstrates that it is currently
+significant. This \DIFdelbegin \DIFdel{perspective }\DIFdelend \DIFaddbegin \DIFadd{Perspective }\DIFaddend demonstrates that it is currently
 possible to resolve chemical phenomena at the level of individual
-particles, at resolutions as low as \SI{10}{nm}, and, in some case,
+particles, at resolutions as low as \SI{10}{nm}, and, in some \DIFdelbegin \DIFdel{case}\DIFdelend \DIFaddbegin \DIFadd{cases}\DIFaddend ,
 while the material is subject to working conditions. However, the
 wealth of techniques presented here and the incipience of these
 approaches lead to the conclusion that researchers are only beginning
@@ -1803,30 +1807,30 @@ today. The National Synchrotron Light Source II (NSLS-II) has now
 replaced the original NSLS at Brookhaven. Additionally, the Advanced
 Photon Source (APS), Advanced Light Source, Stanford Synchrotron
 Radiation Lightsource, and Cornell High Energy Synchrotron Source
-(United States), as well Deutsches Elektronen-Synchrotron and European
-Synchrotron Radiation Facility in Europe, and Spring-8 in Japan all
-have plans for upgrading in the future, though many of these are still
-in very early planning stages. These improvements promise brighter and
-more coherent X-rays. The APS-U project also promises X-ray beams that
-will be much smaller in the horizontal direction, allowing more of the
-beam to be focused on the sample for imaging applications. The
-coherence of the X-rays is critical for ptychography and CDI; having
-pervasive access to coherent radiation will make these imaging
-techniques faster and more efficient than today. Increased brightness
-will shorten the time needed to acquire a \DIFdelbegin \DIFdel{dataset }\DIFdelend \DIFaddbegin \DIFadd{data-set }\DIFaddend of sufficient
-quality for analysis. These developments would bring experiments
-without compromises in any of the dimensions of resolution closer to
-reality. In other words, it would translate into an increase in the
-time resolution of operando experiments without sacrificing spatial or
-chemical resolution and will facilitate the next generation of
-high-impact experiments. Both operando and three-dimensional analyses
-have demonstrated their ability to generate insights that would
-otherwise go unnoticed: combining them in a robust and practical way
-will likely be at the forefront of battery imaging techniques. These
-developments will surely drastically improve the way that we are able
-to define relevant reactions, at the level of molecules to
-architectures, providing vital inputs for the design of devices that
-break current barriers of performance.
+(United States), as well \DIFaddbegin \DIFadd{as }\DIFaddend Deutsches Elektronen-Synchrotron and
+European Synchrotron Radiation Facility in Europe, and \DIFdelbegin \DIFdel{Spring-8 }\DIFdelend \DIFaddbegin \DIFadd{SPring-8 }\DIFaddend in
+Japan all have plans for upgrading in the future, though many of these
+are still in very early planning stages. These improvements promise
+brighter and more coherent X-rays. The APS-U project also promises
+X-ray beams that will be much smaller in the horizontal direction,
+allowing more of the beam to be focused on the sample for imaging
+applications. The coherence of the X-rays is critical for ptychography
+and CDI; having pervasive access to coherent radiation will make these
+imaging techniques faster and more efficient than today. Increased
+brightness will shorten the time needed to acquire a \DIFdelbegin \DIFdel{dataset }\DIFdelend \DIFaddbegin \DIFadd{data-set }\DIFaddend of
+sufficient quality for analysis. These developments would bring
+experiments without compromises in any of the dimensions of resolution
+closer to reality. In other words, it would translate into an increase
+in the time resolution of operando experiments without sacrificing
+spatial or chemical resolution and will facilitate the next generation
+of high-impact experiments. Both operando and three-dimensional
+analyses have demonstrated their ability to generate insights that
+would otherwise go unnoticed: combining them in a robust and practical
+way will likely be at the forefront of battery imaging
+techniques. These developments will surely drastically improve the way
+that we are able to define relevant reactions, at the level of
+molecules to architectures, providing vital inputs for the design of
+devices that break current barriers of performance.
 
 \section{Acknowledgement}
 This work was supported as part of the NorthEast Center for Chemical
