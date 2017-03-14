@@ -1,7 +1,7 @@
 \documentclass[journal=cmatex,manuscript=perspective]{achemso}
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL perspective_paper_2016-original.tex   Fri Mar  3 11:59:12 2017
-%DIF ADD perspective_paper_2016.tex            Mon Mar  6 11:00:53 2017
+%DIF ADD perspective_paper_2016.tex            Wed Mar  8 19:49:47 2017
 
 \usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
 \usepackage[T1]{fontenc}       % Use modern font encodings
@@ -1838,7 +1838,10 @@ Energy Storage (NECCES), an Energy Frontier Research Center funded by
 the U.S. Department of Energy, Office of Science, Basic Energy
 Sciences under Award \# DE-SC0012583.
 
-\bibliography{refs}
+\DIFdelbegin %DIFDELCMD < \bibliography{refs}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \bibliography{refs-abbrev}
+\DIFaddend 
 
 \bibstyle{achemso}
 
